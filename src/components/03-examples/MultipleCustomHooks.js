@@ -6,7 +6,7 @@ import '../02-useEffect/effect.css'
 
 export const MultipleCustomHooks = () => {
     const {counter, increment} = useCounter(1)
-    const {error, loading, data} = useFetch(`https://www.breakingbadapi.com/api/quotes/${counter}`)
+    const {loading, data} = useFetch(`https://www.breakingbadapi.com/api/quotes/${counter}`)
 
     const {author, quote} = !!data && data[0] 
 
