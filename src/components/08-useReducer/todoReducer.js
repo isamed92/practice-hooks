@@ -3,7 +3,7 @@ export const todoReducer = (state = [], action) => {
     case 'add':
       return [...state, action.payload];
     case 'remove':
-      return state.filter((item) => item.id != action.payload);
+      return state.filter((item) => item.id !== action.payload);
     // case 'toggle':
     //     return state.map(todo => {
     //         if(todo.id === action.payload){
